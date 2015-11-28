@@ -1,3 +1,6 @@
+# v2.0.2, 2015-11-20
+* Fix templates path
+
 # v2.0.1, 2015-11-20
 * Fix typo
 

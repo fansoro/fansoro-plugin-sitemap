@@ -12,7 +12,7 @@
 if (Url::getUriSegment(0) == 'sitemap.xml') {
     Action::add('before_page_rendered', function () {
 
-        $template = Template::factory(PLUGINS_PATH . '/sitemap/templates//');
+        $template = Template::factory(PLUGINS_PATH . '/sitemap/templates/');
 
         $template->setOptions(array(
             "strip" => false
@@ -24,6 +24,5 @@ if (Url::getUriSegment(0) == 'sitemap.xml') {
         Request::setHeaders('Content-Type: text/xml; charset=utf-8');
         $template->display('sitemap.tpl', array('pages' => $pages));
         Request::shutdown();
-
     });
 }
