@@ -1,3 +1,6 @@
+# v3.0.0, 2016-01-22
+* Rebranding
+
 # v2.0.2, 2015-11-20
 * Fix templates path
 
